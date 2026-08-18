@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Welcome Chime logo mark</title>
+  <desc id="desc">A four-point town clock above a wide open Romanesque doorway.</desc>
+  <path
+    fill="#183B35"
+    d="M56 456V224C56 113.5 145.5 24 256 24s200 89.5 200 200v232h-86c-13-23-24-50-32-80V258c0-46.4-36.7-84-82-84s-82 37.6-82 84v118c-8 30-19 57-32 80H56Z"
+  />
+  <circle cx="256" cy="108" r="48" fill="#E5B642" />
+  <g fill="#183B35">
+    <rect x="251" y="71" width="10" height="18" rx="5" />
+    <rect x="251" y="127" width="10" height="18" rx="5" />
+    <rect x="219" y="103" width="18" height="10" rx="5" />
+    <rect x="275" y="103" width="18" height="10" rx="5" />
+  </g>
+  <rect x="204" y="452" width="104" height="22" rx="11" fill="#B4472D" />
+</svg>
