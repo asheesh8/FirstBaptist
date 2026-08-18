@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "First Congregational Church of St. Albans",
     images: [
       {
-        url: "/social-card.png",
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "First Congregational Church of St. Albans — There’s room for you here.",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "There’s room for you here.",
     description:
       "Sunday worship at 10:00 am beside Taylor Park in St. Albans, Vermont.",
-    images: ["/social-card.png"],
+    images: ["/og.png"],
   },
 };
 

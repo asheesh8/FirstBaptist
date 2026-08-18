@@ -12,12 +12,10 @@ export const church = {
 } as const;
 
 export const navigation = [
-  { label: "Visit", href: "#visit" },
-  { label: "Worship", href: "#worship" },
-  { label: "Programs", href: "#programs" },
-  { label: "Events", href: "#events" },
-  { label: "Stories", href: "#stories" },
-  { label: "About", href: "#about" },
+  { label: "Visit", href: "/visit" },
+  { label: "Worship", href: "/worship" },
+  { label: "What’s on", href: "/whats-on" },
+  { label: "About", href: "/about" },
 ] as const;
 
 export type EventCategory =
@@ -109,7 +107,7 @@ export const programCards = [
       "Music, meditation, hymn-singing, and reflection—followed by coffee, treats, and time to talk.",
     image: "/images/sanctuary.webp",
     alt: "The center aisle and wooden pews leading toward the chancel and organ pipes.",
-    href: "#worship",
+    href: "/worship",
     link: "See what Sunday feels like",
   },
   {
@@ -120,7 +118,7 @@ export const programCards = [
       "Choir, organ, piano, art, and community concerts bring the sanctuary to life in every season.",
     image: "/images/music-stained-glass.webp",
     alt: "Organ pipes, stained glass, and carved timberwork in the sanctuary.",
-    href: "#events",
+    href: "/worship#music",
     link: "Explore music and art",
   },
   {
@@ -131,7 +129,7 @@ export const programCards = [
       "Reflection groups, shared meals, community meetings, and local care find a home under this roof.",
     image: "/images/fellowship.webp",
     alt: "The open, wood-floored fellowship hall beneath dark timber beams.",
-    href: "#events",
+    href: "/whats-on#programs",
     link: "Find your next gathering",
   },
 ] as const;
