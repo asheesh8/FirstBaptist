@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Contact Us | </title>
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://firstcongregationalstalbans.org/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://s2.wp.com/wp-content/themes/pub/twentythirteen/js/html5.js?m=1394055255i&amp;ver=3.7.0"></script>
+	<![endif]-->
+	<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Alegreya:500:latin,latin-ext","Quattrocento+Sans:r,i,b,bi:latin,latin-ext"]},"api_url":"https:\/\/fonts-api.wp.com\/css"};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = '/wp-content/plugins/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css">.wf-active .site-title{font-family:"Alegreya",serif;font-weight:500;font-style:normal}.wf-active .navbar-fixed .site-title{font-weight:500;font-style:normal}.wf-active body, .wf-active select, .wf-active .menu-toggle{font-family:"Quattrocento Sans",sans-serif}.wf-active .site-description{font-family:"Quattrocento Sans",sans-serif}.wf-active .format-link .entry-title{font-family:"Quattrocento Sans",sans-serif}.wf-active .attachment .entry-title{font-family:"Quattrocento Sans",sans-serif}.wf-active .author-description h2{font-family:"Quattrocento Sans",sans-serif}.wf-active .archive-meta, .wf-active .archive-title{font-family:"Quattrocento Sans",sans-serif}.wf-active .page-title{font-family:"Quattrocento Sans",sans-serif}.wf-active .comments-title{font-family:"Quattrocento Sans",sans-serif}.wf-active #reply-title{font-family:"Quattrocento Sans",sans-serif}.wf-active .widget .widget-title{font-family:"Quattrocento Sans",sans-serif}.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6{font-family:"Alegreya",serif;font-style:normal;font-weight:500}.wf-active h1{font-style:normal;font-weight:500}.wf-active h2{font-style:normal;font-weight:500}.wf-active h3{font-style:normal;font-weight:500}.wf-active h4{font-style:normal;font-weight:500}.wf-active h5{font-style:normal;font-weight:500}.wf-active h6{font-style:normal;font-weight:500}.wf-active .entry-title{font-weight:500;font-style:normal}.wf-active .format-audio .entry-title{font-weight:500;font-style:normal}.wf-active .format-chat .entry-title{font-weight:500;font-style:normal}.wf-active .format-gallery .entry-title{font-weight:500;font-style:normal}.wf-active .format-image .entry-title{font-weight:500;font-style:normal}.wf-active .format-video .entry-title{font-weight:500;font-style:normal}</style>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=3'
+					+ '&is_singular=';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9maXJzdGNvbmdyZWdhdGlvbmFsc3RhbGJhbnMub3Jn"
+		+ "&wpcomid=115977107"
+		+ "&time=" + Math.floor( Date.now() / 1000 );
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://firstcongregationalstalbans.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://firstcongregationalstalbans.org/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.7.1/build/styles/block-library/common.min.css */
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons{box-sizing:border-box}.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons .wp-block-button__link{width:100%}.wp-block-button.aligncenter{text-align:center}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.7.1/build/styles/block-library/buttons/style.min.css */
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.7.1/build/styles/block-library/separator/style.min.css */
+</style>
+<style id="wp-block-separator-theme-inline-css">
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.7.1/build/styles/block-library/separator/theme.min.css */
+</style>
+<style id="wp-block-button-inline-css">
+.wp-block-button__link{align-content:center;box-sizing:border-box;cursor:pointer;display:inline-block;height:100%;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button[class*=wp-block-button__width]{width:calc(var(--wp--block-button--width)*1% - var(--wp--style--block-gap, .5em)*(1 - var(--wp--block-button--width)/100))}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button[class*=wp-block-button__width]{width:calc(var(--wp--block-button--width)*1%)}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:transparent;background-image:none}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.7.1/build/styles/block-library/button/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.7.1/build/styles/block-library/paragraph/style.min.css */
+</style>
+<style id="wp-block-library-inline-css-extra">
+.has-text-align-justify {
+	text-align:justify;
+}
+.has-text-align-justify{text-align:justify;}
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+.wp-block-button__link{background-color:#32373c;border-radius:9999px;box-shadow:none;color:#fff;font-size:1.125em;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-file__button{background:#32373c;color:#fff}.wp-block-accordion-heading{margin:0}.wp-block-accordion-heading__toggle{background-color:inherit!important;color:inherit!important}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:focus,.wp-block-accordion-heading__toggle:hover{background-color:inherit!important;border:none;box-shadow:none;color:inherit;padding:var(--wp--preset--spacing--20,1em) 0;text-decoration:none}.wp-block-accordion-heading__toggle:focus-visible{outline:auto;outline-offset:0}.wp-block-tab:not(.has-text-color){color:inherit!important}.wp-block-tab:not(.has-background){background-color:inherit!important}.wp-block-tab:focus,.wp-block-tab:hover{text-decoration:none}.wp-block-tab:focus-visible{outline:auto;outline-offset:0}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.7.1/build/styles/block-library/classic.min.css */
+</style>
+
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-3' href='/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/contact-form/css/jetpack-forms-layout.css?m=1786567347i&cssminify=yes' type='text/css' media='all' />
+
+<style id="coblocks-inline-format-inline-css">
+.uppercase{text-transform:uppercase}
+/*# sourceURL=coblocks-inline-format-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-12-1' href='/_static/??-eJx9jEEOAiEQBD/kQECjeDC+ZWEnijIwYWA3/l72op689KFTVXplCCU3zE1z6reYRYfiUwlP0VYZpwxIJE4IFRd10HOU9iFA2iuhCiI7/ROiDt9WxfETT20jCOc4YUIa2D9t5eGA91xRBMZS7ATtPkTZvCtdzNEZt7f2fHq8Afl7R7w=&cssminify=yes' type='text/css' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #141412;--wp--preset--color--red: #bc360a;--wp--preset--color--medium-orange: #db572f;--wp--preset--color--light-orange: #ea9629;--wp--preset--color--yellow: #fbca3c;--wp--preset--color--dark-brown: #220e10;--wp--preset--color--medium-brown: #722d19;--wp--preset--color--light-brown: #eadaa6;--wp--preset--color--beige: #e8e5ce;--wp--preset--color--off-white: #f7f5e7;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--autumn-brown: linear-gradient(135deg, rgba(226,45,15,1) 0%, rgba(158,25,13,1) 100%);--wp--preset--gradient--sunset-yellow: linear-gradient(135deg, rgba(233,139,41,1) 0%, rgba(238,179,95,1) 100%);--wp--preset--gradient--light-sky: linear-gradient(135deg,rgba(228,228,228,1.0) 0%,rgba(208,225,252,1.0) 100%);--wp--preset--gradient--dark-sky: linear-gradient(135deg,rgba(0,0,0,1.0) 0%,rgba(56,61,69,1.0) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-color{color: var(--wp--preset--color--dark-gray) !important;}.has-red-color{color: var(--wp--preset--color--red) !important;}.has-medium-orange-color{color: var(--wp--preset--color--medium-orange) !important;}.has-light-orange-color{color: var(--wp--preset--color--light-orange) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-dark-brown-color{color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-color{color: var(--wp--preset--color--medium-brown) !important;}.has-light-brown-color{color: var(--wp--preset--color--light-brown) !important;}.has-beige-color{color: var(--wp--preset--color--beige) !important;}.has-off-white-color{color: var(--wp--preset--color--off-white) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-background-color{background-color: var(--wp--preset--color--dark-gray) !important;}.has-red-background-color{background-color: var(--wp--preset--color--red) !important;}.has-medium-orange-background-color{background-color: var(--wp--preset--color--medium-orange) !important;}.has-light-orange-background-color{background-color: var(--wp--preset--color--light-orange) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-dark-brown-background-color{background-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-background-color{background-color: var(--wp--preset--color--medium-brown) !important;}.has-light-brown-background-color{background-color: var(--wp--preset--color--light-brown) !important;}.has-beige-background-color{background-color: var(--wp--preset--color--beige) !important;}.has-off-white-background-color{background-color: var(--wp--preset--color--off-white) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-dark-gray-border-color{border-color: var(--wp--preset--color--dark-gray) !important;}.has-red-border-color{border-color: var(--wp--preset--color--red) !important;}.has-medium-orange-border-color{border-color: var(--wp--preset--color--medium-orange) !important;}.has-light-orange-border-color{border-color: var(--wp--preset--color--light-orange) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-dark-brown-border-color{border-color: var(--wp--preset--color--dark-brown) !important;}.has-medium-brown-border-color{border-color: var(--wp--preset--color--medium-brown) !important;}.has-light-brown-border-color{border-color: var(--wp--preset--color--light-brown) !important;}.has-beige-border-color{border-color: var(--wp--preset--color--beige) !important;}.has-off-white-border-color{border-color: var(--wp--preset--color--off-white) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-autumn-brown-gradient-background{background: var(--wp--preset--gradient--autumn-brown) !important;}.has-sunset-yellow-gradient-background{background: var(--wp--preset--gradient--sunset-yellow) !important;}.has-light-sky-gradient-background{background: var(--wp--preset--gradient--light-sky) !important;}.has-dark-sky-gradient-background{background: var(--wp--preset--gradient--dark-sky) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-14-1' href='/_static/??-eJyVjbEOgzAQQ3+o1DBApqqfguB0gkByRNxFiL8nQh06dOlmW882jlTRJsZiiLlKIU9eFAtbGmj9eGgW9F4IEwvvvhT0t3yS6gNfmzZzZEXKI+wowWmz3425bNoZ+A++kBjDRut98o6vxrmmq11bt8sFneBKlQ==&cssminify=yes' type='text/css' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='/wp-content/themes/pub/twentythirteen/css/style-wpcom.css?m=1509657347i&cssminify=yes' type='text/css' media='all' />
+<style id="jetpack_facebook_likebox-inline-css">
+.widget_facebook_likebox {
+	overflow: hidden;
+}
+
+/*# sourceURL=/wp-content/mu-plugins/jetpack-plugin/sun/modules/widgets/facebook-likebox/style.css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-18-1' href='/_static/??-eJzTLy/QTc7PK0nNK9HPLdUtyClNz8wr1i9KTcrJTwcy0/WTi5G5ekCujj52Temp+bo5+cmJJZn5eSgc3bScxMwikFb7XFtDE1NLExMLc0OTLACohS2q&cssminify=yes' type='text/css' media='all' />
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-20-1' href='/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all' />
+<script id="wpcom-actionbar-placeholder-js-extra">
+var actionbardata = {"siteID":"115977107","postID":"3","siteURL":"https://firstcongregationalstalbans.org","xhrURL":"https://firstcongregationalstalbans.org/wp-admin/admin-ajax.php","nonce":"319d689d5a","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https://s0.wp.com/wp-content/js/wpcom-proxy-request.js?m=1513050504i&amp;ver=20211021","shortlink":"https://wp.me/P7QCWv-3","i18n":{"followedText":"New posts from this site will now appear in your \u003Ca href=\"https://wordpress.com/reader\"\u003EReader\u003C/a\u003E","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","shortLinkCopied":"Shortlink copied to clipboard."}};
+//# sourceURL=wpcom-actionbar-placeholder-js-extra
+</script>
+<script id="jetpack-mu-wpcom-settings-js-before">
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://s1.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??-eJzTLy/QTc7PK0nNK9HPKtYvyinRLSjKr6jUyyrW0QfKZeYl55SmpBaDJLMKS1OLKqGUXm5mHkFFurmZ6UWJJalQxfa5tobmRgamxgZmFpZZACbyLJI='></script>
+<script id="rlt-proxy-js-after">
+	rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+//# sourceURL=rlt-proxy-js-after
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://firstcongregationalstalbans.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://firstcongregationalstalbans.org/contact/" />
+<link rel='shortlink' href='https://wp.me/P7QCWv-3' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Ffirstcongregationalstalbans.org%2Fcontact%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Ffirstcongregationalstalbans.org%2Fcontact%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Contact Us" />
+<meta property="og:url" content="https://firstcongregationalstalbans.org/contact/" />
+<meta property="og:description" content="This is just a short excerpt for the contact&nbsp;page." />
+<meta property="article:published_time" content="2020-04-18T03:09:35+00:00" />
+<meta property="article:modified_time" content="2023-09-21T13:11:55+00:00" />
+<meta property="og:image" content="https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=200" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:text:title" content="Contact Us" />
+<meta name="twitter:image" content="https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=240" />
+<meta name="twitter:card" content="summary" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="search" type="application/opensearchdescription+xml" href="https://firstcongregationalstalbans.org/osd.xml" title="" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="description" content="This is just a short excerpt for the contact&nbsp;page." />
+	<style type="text/css" id="twentythirteen-header-css">
+		.site-header {
+		background: url(https://firstcongregationalstalbans.org/wp-content/uploads/2023/11/fcc-banner-2.png) no-repeat scroll top;
+		background-size: 1600px auto;
+	}
+	@media (max-width: 767px) {
+		.site-header {
+			background-size: 768px auto;
+		}
+	}
+	@media (max-width: 359px) {
+		.site-header {
+			background-size: 360px auto;
+		}
+	}
+			</style>
+	<style type="text/css" id="custom-colors-css">	.navbar-fixed .navbar {
+		box-shadow: 0 2px 2px rgba(0,0,0, 0.1);
+	}
+	.blog .format-link:first-of-type, .single .format-link:first-of-type {
+		box-shadow: inset 0px 2px 2px rgba(0,0,0, 0.1);
+	}
+.nav-menu li a, .menu-toggle { color: #141414;}
+.navbar-fixed #masthead .site-title, .nav-menu li a, .menu-toggle, .site-header .searchform div:before { color: #141414;}
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a { color: #141414;}
+.menu-toggle:hover, .menu-toggle:focus { color: #141414;}
+.format-gallery .entry-title, .format-gallery .entry-title a, .format-gallery a { color: #000000;}
+.format-chat .entry-title, .format-chat .entry-title a, .format-chat a { color: #141414;}
+.format-link .entry-content, .format-aside .entry-content { color: #141414;}
+.format-chat .entry-content { color: #141414;}
+.format-status .entry-content { color: #000000;}
+.paging-navigation .meta-nav { color: #494949;}
+.nav-menu .children .current_page_item > a, .nav-menu .sub-menu .current-menu-item > a,.nav-menu .sub-menu .current_page_item > a, .nav-menu .children .current-menu-item > a { color: #FFFFFF;}
+.format-link, .format-aside, .paging-navigation { background-color: #f4f6f8;}
+.format-link .entry-title, .format-link .entry-title a, .format-link .entry-content a, .format-link .entry-meta a { color: #5D6692;}
+.format-link .entry-title a:hover, .format-link .entry-content a:hover, .format-link .entry-meta a:hover { color: #95A8BB;}
+.format-chat { background-color: #C3CED9;}
+.format-chat .entry-meta a, .format-chat .entry-content a { color: #858DB1;}
+.format-chat .entry-content a:hover, .format-chat .entry-meta a:hover { color: #A7AEC7;}
+.site-header a { color: #171825;}
+.site-footer { background-color: #D3DBE3;}
+.site-footer { color: #A7AEC7;}
+.site-footer .widget, .site-footer .widget-title, .site-footer .widget-title a, .site-footer .wp-caption-text { color: #A7AEC7;}
+.site-footer a { color: #535B82;}
+.navbar { background-color: #f4f6f8;}
+.nav-menu li a:hover, ul.nav-menu ul a:hover, .nav-menu ul ul a:hover { background-color: #5B758F;}
+.archive-header, .page-header, .error404 .page-wrapper, .highlander-enabled #respond, .no-comments, .infinite-loader, #infinite-handle { background-color: #D3DBE3;}
+.archive-header, .page-header, .error404 .page-wrapper, .highlander-enabled #respond, .no-comments, .infinite-loader { color: #535B82;}
+.navigation a:hover { color: #5D6692;}
+.paging-navigation a:hover .meta-nav { background-color: #5D6692;}
+.paging-navigation .meta-nav { color: #f4f6f8;}
+.format-gallery { background-color: #a6c7d8;}
+.format-gallery .entry-meta a, .format-gallery .entry-content a, .format-gallery span.tags-links { color: #325A70;}
+.format-gallery .entry-content a:hover, .format-gallery .entry-meta a:hover { color: #3D7089;}
+.format-quote, .site-footer .sidebar-container { background-color: #021b2b;}
+.format-quote a, .format-quote .entry-meta a { color: #006AAD;}
+.format-quote .entry-content { color: #EEF6FB;}
+.format-quote .entry-content a:hover, .format-quote .entry-meta a:hover { color: #014E7E;}
+#secondary { color: #0090EA;}
+.format-video, .format-audio { background-color: #407ca0;}
+.format-video .entry-content a, .format-video .entry-meta a, .format-audio .entry-content a, .format-audio .entry-meta a { color: #000000;}
+.format-video .entry-content a:hover, .format-video .entry-meta a:hover, .format-audio .entry-content a:hover, .format-audio .entry-meta a:hover { color: #000000;}
+.entry-content a, .comment-content a, #secondary a, .entry-meta a, .format-standard .entry-title a:hover, .format-image .entry-title a:hover, .attachment .entry-meta a, .attachment .entry-meta .edit-link:before, .attachment .full-size-link:before, .error404 .page-title:before, .archive-title a, .comment-author .fn, .comment-reply-link, comment-reply-login, .comment-author .url, .pingback .url, .trackback .url, .ping-meta a, .widget a { color: #3B7395;}
+.entry-content .page-links a { background-color: #3B7395;}
+.entry-content .page-links a { border-color: #407ca0;}
+.entry-content .page-links a { color: #000000;}
+.entry-content .page-links a:hover { background-color: #000000;}
+.entry-content a:hover, .comment-content a:hover, .entry-meta a:hover, .archive-title a:hover, .comment-reply-link:hover, comment-reply-login:hover, .comment-author .url:hover, .comment-meta a:hover, .ping-meta a:hover, .pingback .url:hover, .trackback .url:hover,.widget a:hover { color: #315F7B;}
+.format-status { background-color: #d0523e;}
+.format-status .entry-content a { color: #000000;}
+.format-status .entry-meta a { color: #000000;}
+.navigation a { color: #B83F2C;}
+.paging-navigation .meta-nav { background-color: #B83F2C;}
+</style>
+<link rel="icon" href="https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=32" sizes="32x32" />
+<link rel="icon" href="https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=180" />
+<meta name="msapplication-TileImage" content="https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=270" />
+<style id="jetpack-block-button-inline-css">
+.amp-wp-article .wp-block-jetpack-button{color:#fff}.wp-block-jetpack-button.aligncenter,.wp-block-jetpack-button.alignleft,.wp-block-jetpack-button.alignright{display:block}.wp-block-jetpack-button.aligncenter{margin-left:auto;margin-right:auto}.wp-block-jetpack-button.alignleft{margin-right:auto}.wp-block-jetpack-button.alignright{margin-left:auto}.wp-block-jetpack-button{height:fit-content;margin:0;max-width:100%;width:fit-content}.wp-block-jetpack-button.is-style-outline>.wp-block-button__link{background-color:#0000;border:1px solid;color:currentColor}:where(.wp-block-jetpack-button:not(.is-style-outline) button){border:none}.wp-block-jetpack-button .spinner{display:none;fill:currentColor}.wp-block-jetpack-button .spinner svg{display:block}.wp-block-jetpack-button .is-submitting .spinner{display:inline}.wp-block-jetpack-button .is-visually-hidden{clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}.wp-block-jetpack-button .disable-spinner .spinner{display:none}
+/*# sourceURL=/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/button/view.css?minify=false */
+</style>
+<style id="jetpack-block-mailchimp-inline-css">
+.wp-block-jetpack-mailchimp.is-processing form{display:none}.wp-block-jetpack-mailchimp .wp-block-jetpack-button.aligncenter,.wp-block-jetpack-mailchimp .wp-block-jetpack-button.alignleft,.wp-block-jetpack-mailchimp .wp-block-jetpack-button.alignright,.wp-block-jetpack-mailchimp p.aligncenter,.wp-block-jetpack-mailchimp p.alignleft,.wp-block-jetpack-mailchimp p.alignright{display:block}.wp-block-jetpack-mailchimp .wp-block-jetpack-button.aligncenter,.wp-block-jetpack-mailchimp p.aligncenter{margin-left:auto;margin-right:auto}.wp-block-jetpack-mailchimp .wp-block-jetpack-button.alignleft,.wp-block-jetpack-mailchimp p.alignleft{margin-right:auto}.wp-block-jetpack-mailchimp .wp-block-jetpack-button.alignright,.wp-block-jetpack-mailchimp p.alignright{margin-left:auto}.wp-block-jetpack-mailchimp .wp-block-jetpack-button,.wp-block-jetpack-mailchimp p{margin-bottom:1em}.wp-block-jetpack-mailchimp input{box-sizing:border-box;width:100%}.wp-block-jetpack-mailchimp .error,.wp-block-jetpack-mailchimp .error:focus{outline:1px;outline-color:#d63638;outline-offset:-2px;outline-style:auto}.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification{display:none;margin-bottom:1.5em;padding:.75em}.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.is-visible{display:block}.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.wp-block-jetpack-mailchimp_error{background-color:#d63638;color:#fff}.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.wp-block-jetpack-mailchimp_processing{background-color:rgba(0,0,0,.025)}.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.wp-block-jetpack-mailchimp_success{background-color:#008a20;color:#fff}.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.wp-block-jetpack-mailchimp__is-amp{display:block}.wp-block-jetpack-mailchimp :is(form.amp-form-submit-error,form.amp-form-submit-success,form.amp-form-submitting)>p{display:none}
+/*# sourceURL=/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/mailchimp/view.css?minify=false */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-6-5' href='/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/contact-form/css/grunion.css?m=1786507044i&cssminify=yes' type='text/css' media='all' />
+<style id="block-style-variation-styles-inline-css">
+:root :where(.wp-block-button.is-style-outline--2 .wp-block-button__link){background: transparent none;border-color: currentColor;border-width: 2px;border-style: solid;color: currentColor;padding-top: 0.667em;padding-right: 1.33em;padding-bottom: 0.667em;padding-left: 1.33em;}
+/*# sourceURL=block-style-variation-styles-inline-css */
+</style>
+<style id="core-block-supports-inline-css">
+.wp-container-jetpack-contact-form-is-layout-53c17e14{justify-content:flex-start;align-items:flex-start;}.wp-container-core-buttons-is-layout-fe48e5de{justify-content:center;}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+
+</head>
+
+<body class="wp-singular page-template-default page page-id-3 wp-embed-responsive wp-theme-pubtwentythirteen customizer-styles-applied sidebar jetpack-reblog-enabled custom-colors">
+		<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header">
+			<a class="home-link" href="https://firstcongregationalstalbans.org/" title="" rel="home">
+				<h1 class="site-title"></h1>
+				<h2 class="site-description"></h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation">
+					<button class="menu-toggle">Menu</button>
+					<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+					<div class="menu-primary-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-78"><a href="https://firstcongregationalstalbans.org/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="https://firstcongregationalstalbans.org/history/">Church History</a></li>
+	<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://firstcongregationalstalbans.org/building-use/">Building Use</a></li>
+	<li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="https://firstcongregationalstalbans.org/staff/">Church Staff</a></li>
+</ul>
+</li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="https://firstcongregationalstalbans.org/faith/">Faith</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="https://firstcongregationalstalbans.org/music/">Music Ministry</a></li>
+<li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="https://firstcongregationalstalbans.org/photo-gallery/">Photo Gallery</a></li>
+<li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556"><a href="https://firstcongregationalstalbans.org/online-services/">Sunday Service</a></li>
+<li id="menu-item-547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547"><a href="https://firstcongregationalstalbans.org/announcements/">Announcements</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3 current_page_item menu-item-10"><a href="https://firstcongregationalstalbans.org/contact/" aria-current="page">Contact Us</a></li>
+</ul></div>					<form role="search" method="get" class="search-form" action="https://firstcongregationalstalbans.org/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+			
+				<article id="post-3" class="post-3 page type-page status-publish hentry">
+					<header class="entry-header">
+						
+						<h1 class="entry-title">Contact Us</h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						
+<p class="wp-block-paragraph">An administrator is in the church office daily, but our hours are varied. Please leave us a message by phone or email and someone can reply to you within a business day.<br><span style="color:#993366"><em><strong>We are happy to make a specific appointment time!</strong></em></span></p>
+
+
+
+<p class="wp-block-paragraph"><strong>Mailing/Courier Address</strong>: <br> First Congregational Church<br> 27 Church Street<br> Saint Albans, Vermont 05478</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Phone</strong>: (802) 524-4555<br> <strong>Email</strong>: <a rel="noreferrer noopener" href="mailto:info@firstcongregationalstalbans.org" target="_blank">info@firstcongregationalstalbans.org</a><br> <strong>Facebook</strong>: <a href="http://www.facebook.com/1stCongregationalChurchStAlbans" rel="nofollow">http://www.facebook.com/1stCongregationalChurchStAlbans</a></p>
+
+
+
+<hr class="wp-block-separator has-css-opacity" />
+
+
+
+<p class="wp-block-paragraph">Join our e-mail list to receive weekly bulletins and special announcements: </p>
+
+
+
+	<div class="wp-block-jetpack-mailchimp" data-blog-id="115977107">
+		<form
+			aria-describedby="wp-block-jetpack-mailchimp_consent-text"
+					>
+			<p>
+				<input
+					aria-label="Enter your email"
+					placeholder="Enter your email"
+					required
+					title="Enter your email"
+					type="email"
+					name="email"
+				/>
+			</p>
+									
+<div class="wp-block-jetpack-button wp-block-button" style=""><button class="wp-block-button__link" style="" data-id-attr="mailchimp-button-block-1" id="mailchimp-button-block-1" type="submit" data-wp-class--is-submitting="state.isSubmitting" data-wp-bind--aria-disabled="state.isAriaDisabled">Join my email list<span class="spinner" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path></svg><span class="is-visually-hidden">Submitting form</span></span></button></div>
+			<p id="wp-block-jetpack-mailchimp_consent-text">
+				By clicking submit, you agree to share your email address with the site owner and MailChimp to receive marketing, updates, and other emails from the site owner. Use the unsubscribe link in those emails to opt out at any time. 			</p>
+
+			
+		</form>
+		
+			<div class="wp-block-jetpack-mailchimp_notification wp-block-jetpack-mailchimp_processing" role="status">
+				Processing…			</div>
+			<div class="wp-block-jetpack-mailchimp_notification wp-block-jetpack-mailchimp_success" role="status">
+				Success! You&#039;re on the list.			</div>
+			<div class="wp-block-jetpack-mailchimp_notification wp-block-jetpack-mailchimp_error" role="alert">
+				Whoops! There was an error and we couldn&#039;t process your subscription. Please reload the page and try again.			</div>
+
+			</div>
+	
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity" />
+
+
+<div data-test='contact-form'
+			id='contact-form-3'
+			class='jetpack-contact-form-container '
+			data-wp-interactive='jetpack/form' data-wp-context='{"formId":"3","formHash":"1b604b8ff684ff65fa68b6114708327f66f87bdf","showErrors":false,"errors":[],"fields":[],"isMultiStep":false,"useAjax":false,"submissionData":null,"formattedSubmissionData":[],"submissionSuccess":false,"submissionError":null,"elementId":"jp-form-1b604b8ff684ff65fa68b6114708327f66f87bdf","isSingleInputForm":false,"isForcedHorizontal":false}'
+			data-wp-on--focusin="actions.trackFirstInteraction"
+			data-wp-watch--scroll-to-wrapper="callbacks.scrollToWrapper"
+		>
+<div class="contact-form-submission contact-form-ajax-submission" data-wp-bind--aria-hidden="state.isSuccessMessageAriaHidden" data-wp-class--submission-success="context.submissionSuccess" id="contact-form-success-1b604b8ff684ff65fa68b6114708327f66f87bdf" tabindex="-1" aria-labelledby="contact-form-success-header-1b604b8ff684ff65fa68b6114708327f66f87bdf"><p class="go-back-message"><a class="link" role="button" tabindex="0" data-wp-on--click="actions.goBack" href="/contact/">← Back</a></p><h4 data-wp-bind--aria-hidden="state.isSuccessMessageAriaHidden" id="contact-form-success-header-1b604b8ff684ff65fa68b6114708327f66f87bdf">Thank you for your response. ✨</h4>
+
+<template data-wp-each--submission="context.formattedSubmissionData">
+					<div class="jetpack_forms_contact-form-success-summary">
+						<div class="field-name-wrapper">
+							<div class="field-type-icon" data-wp-watch="callbacks.watchFieldTypeIcon"></div>
+							<div class="field-name" data-wp-text="context.submission.label" data-wp-bind--hidden="!context.submission.label"></div>
+						</div>
+						<div class="field-value" data-wp-text="context.submission.value" data-wp-bind--hidden="!context.submission.showPlainValue"></div>
+						<a class="field-url" data-wp-bind--href="context.submission.url" data-wp-text="context.submission.value" data-wp-bind--hidden="!context.submission.url" target="_blank" rel="noopener noreferrer"></a>
+						<div class="field-rating" data-wp-bind--hidden="!context.submission.rating" data-wp-watch="callbacks.watchRatingIcons"></div>
+						<div class="field-images" data-wp-bind--hidden="!context.submission.images">
+							<template data-wp-each--image="context.submission.images">
+								<div class="field-image-option" data-wp-class--is-empty="!context.image.src">
+									<figure class="field-image-option__image" data-wp-class--is-empty="!context.image.src">
+										<img data-wp-bind--src="context.image.src" data-wp-bind--hidden="!context.image.src" />
+										<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-wp-bind--hidden="context.image.src" />
+									</figure>
+									<div class="field-image-option__label-wrapper">
+										<span class="field-image-option__label-code" data-wp-text="context.image.letterCode"></span>
+										<span class="field-image-option__label" data-wp-text="context.image.label" data-wp-bind--hidden="!context.image.label"></span>
+									</div>
+								</div>
+							</template>
+						</div>
+						<div class="field-files" data-wp-bind--hidden="!context.submission.files">
+							<template data-wp-each--file="context.submission.files">
+								<div class="field-file">
+									<div class="field-file__thumbnail" data-wp-style--background-image="context.file.previewUrl" data-wp-style--mask-image="context.file.iconUrl" data-wp-bind--hidden="!context.file.hasPreview"></div>
+									<svg class="field-file__icon" data-wp-bind--hidden="context.file.hasPreview" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+										<path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="currentColor"/>
+									</svg>
+									<span class="field-file__name" data-wp-text="context.file.name"></span>
+									<span class="field-file__size" data-wp-text="context.file.size"></span>
+								</div>
+							</template>
+						</div>
+					</div>
+				</template></div><form action='https://firstcongregationalstalbans.org/contact/'
+				id='jp-form-1b604b8ff684ff65fa68b6114708327f66f87bdf'
+				method='post'
+				class='contact-form commentsblock jetpack-contact-form__form has-no-jetpack-form-layout' aria-label="Contact Us"
+				data-wp-on--submit="actions.onFormSubmit"
+				data-wp-on--reset="actions.onFormReset"
+				data-wp-class--submission-success="context.submissionSuccess"
+				data-wp-class--is-first-step="state.isFirstStep"
+				data-wp-class--is-last-step="state.isLastStep"
+				data-wp-class--is-ajax-form="context.useAjax"
+				novalidate >
+<input type='hidden' name='jetpack_contact_form_jwt' value='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbmNyeXB0ZWRfYXR0cmlidXRlcyI6IkZCTS9sOUV5YWtKU21UWm1zeU9oNVhGOVVlZTltdU9KNGd6eFJVWDF1T3QyeFZzUFkyQWhYTkExYkptcG9ReG9YaDNxMVFjbUdWWU1xMUZNeVhTV2RVakVMOU5JeWNoU3Z5ZDQrTTgzWmUyOWgvcThxUXZWb0dTZElkR25IblVibkk5dm5UVktHdDZjdW0rcFlPTVRKZlc0YldOeDlUMGN5akUwVjF1REovWWtHYnY4SXRYeitsTkE3ajFRY0lUcFBiUytFTmhYdk9YdnNnZ1BJUDZ5eU9oamZIOU44Mk1ZS3hKeGo3QzczL05IZlVIa1BGL1ovdW1oQncvUXE3VkI1M0JsQjA0NEM4eXF4L3N6NTIrZnRSWDl6QzBKdjBVbGlpbnMwUE13eHZPNlZrdkljajNaTktPOWdIZHYrVkVlZDVFcVhxaFdsTi9USGtSYURnaFNUQlAzTGpYV3M4NnVzSnU3bGZFMFJKWjRNRHBiYTEvenppU1g1eldtbTNUUTdhYmpCKzEyZ3FpQTdkTzlyMFZWM216YkVJclpDM2ZLQW1EYUJ4TURRR3V6Z1dwWjhBTHpYK3k1ZjFTcXJUMC9UY2dIOG4xc2JPMStFRGc5M3FoWE5IcTB6SUJyRmdGWEJTczkydU5GNjF3OHdPTSs4Q0U0UWVnU1p1ZWtabHM4amUyVXU4Y3J3RGRYUlByM1FRZ3hPcTdlNDI4NUNMMjJ3VDgzQzhicHBwMjZpM1pOdjNZRmhKRk00bWVpWXpqbmh1RCtjZE42YVpzcW85eVFPSEtmOW03ZGpkSWNPMlAyTGtKa2tCV0M2TTRvOWxYR2xlVUlOdUlwZ1l4K1NaNGFkcjgxZnZQTFRQNnpHRkFVZ2F1cEdTUjhDWEN1eE9jWDkrZGRmdVN1cUd1WTRVNW40d05vVkNWdk5YYkFUS2svN01nSHdpejM2b3RjcjhRWkZHczFuNFA5cW84ak1IMHZjSlEzTDdKTXVMMkE3Q2Y4eG53SzlQditjTU9CYTEvVDg3QWhrWWFGc0FEcUtCbWY4bVkxK3dvalFwbVRYM1pKdU9nQmtldzFFemRyRmtIQUdMcU93WFdTeU4zeXR6ZUx0aysxTU1tVzZ3MDdUQlFyempxUWRtL1ljY2hNTG02SlV4Wk5YTm9vZkVvR2d2bHB5Nk4wckNscXVQSlp3NDhoZkl0TTdrTnIxQ0pTZDZpVlpiRnhHNlpDOVZUV1dSaU05YXk2NHVSN1hid1hBZTVIOGc9PSIsImNvbnRlbnQiOiJcbjxkaXYgY2xhc3M9XCJ3cC1ibG9jay1qZXRwYWNrLWNvbnRhY3QtZm9ybVwiIHN0eWxlPVwicGFkZGluZy10b3A6MTZweDtwYWRkaW5nLXJpZ2h0OjE2cHg7cGFkZGluZy1ib3R0b206MTZweDtwYWRkaW5nLWxlZnQ6MTZweFwiPlxuPHAgY2xhc3M9XCJ3cC1ibG9jay1wYXJhZ3JhcGhcIj5PciB1c2UgdGhpcyA8c3Ryb25nPkNPTlRBQ1QgRk9STSA8L3N0cm9uZz50byBtZXNzYWdlIHVzIGRpcmVjdGx5LiBUaGVzZSBtZXNzYWdlcyBhcmUgcmVjZWl2ZWQgZHVyaW5nIGJ1c2luZXNzIGhvdXJzOjwvcD5cblxuXG5bY29udGFjdC1maWVsZCByZXF1aXJlZD1cIjFcIiByZXF1aXJlZFRleHQ9XCIocmVxdWlyZWQpXCIgdHlwZT1cIm5hbWVcIiBsYWJlbD1cIk5hbWVcIi9dXG5cbltjb250YWN0LWZpZWxkIHJlcXVpcmVkPVwiMVwiIHJlcXVpcmVkVGV4dD1cIihyZXF1aXJlZClcIiB0eXBlPVwiZW1haWxcIiBsYWJlbD1cIkVtYWlsXCIvXVxuXG5bY29udGFjdC1maWVsZCBsYWJlbD1cIk1lc3NhZ2VcIiByZXF1aXJlZFRleHQ9XCIocmVxdWlyZWQpXCIgdHlwZT1cInRleHRhcmVhXCIvXVxuXG48ZGl2IGNsYXNzPVwid3AtYmxvY2stamV0cGFjay1idXR0b24gd3AtYmxvY2stYnV0dG9uXCIgc3R5bGU9XCJcIj48YnV0dG9uIGNsYXNzPVwid3AtYmxvY2stYnV0dG9uX19saW5rXCIgc3R5bGU9XCJcIiBkYXRhLWlkLWF0dHI9XCJwbGFjZWhvbGRlclwiIHR5cGU9XCJzdWJtaXRcIiBkYXRhLXdwLWNsYXNzLS1pcy1zdWJtaXR0aW5nPVwic3RhdGUuaXNTdWJtaXR0aW5nXCIgZGF0YS13cC1iaW5kLS1hcmlhLWRpc2FibGVkPVwic3RhdGUuaXNBcmlhRGlzYWJsZWRcIj5Db250YWN0IFVzPHNwYW4gY2xhc3M9XCJzcGlubmVyXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI-PHN2ZyB3aWR0aD1cIjI0XCIgaGVpZ2h0PVwiMjRcIiB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Z1wiPjxwYXRoIGQ9XCJNMTIsMUExMSwxMSwwLDEsMCwyMywxMiwxMSwxMSwwLDAsMCwxMiwxWm0wLDE5YTgsOCwwLDEsMSw4LThBOCw4LDAsMCwxLDEyLDIwWlwiIG9wYWNpdHk9XCIuMjVcIi8-PHBhdGggZD1cIk0xMC4xNCwxLjE2YTExLDExLDAsMCwwLTksOC45MkExLjU5LDEuNTksMCwwLDAsMi40NiwxMiwxLjUyLDEuNTIsMCwwLDAsNC4xMSwxMC43YTgsOCwwLDAsMSw2LjY2LTYuNjFBMS40MiwxLjQyLDAsMCwwLDEyLDIuNjloMEExLjU3LDEuNTcsMCwwLDAsMTAuMTQsMS4xNlpcIj48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPVwidHJhbnNmb3JtXCIgdHlwZT1cInJvdGF0ZVwiIGR1cj1cIjAuNzVzXCIgdmFsdWVzPVwiMCAxMiAxMjszNjAgMTIgMTJcIiByZXBlYXRDb3VudD1cImluZGVmaW5pdGVcIi8-PC9wYXRoPjwvc3ZnPjxzcGFuIGNsYXNzPVwiaXMtdmlzdWFsbHktaGlkZGVuXCI-U3VibWl0dGluZyBmb3JtPC9zcGFuPjwvc3Bhbj48L2J1dHRvbj48L2Rpdj48L2Rpdj5cbiIsImhhc2giOiIxYjYwNGI4ZmY2ODRmZjY1ZmE2OGI2MTE0NzA4MzI3ZjY2Zjg3YmRmIiwic291cmNlIjp7ImVudHJ5X3RpdGxlIjoiQ29udGFjdCBVcyIsImVudHJ5X3BhZ2UiOjEsInNvdXJjZV9pZCI6Mywic291cmNlX3R5cGUiOiJzaW5nbGUiLCJyZXF1ZXN0X3VybCI6Imh0dHBzOi8vZmlyc3Rjb25ncmVnYXRpb25hbHN0YWxiYW5zLm9yZy9jb250YWN0In0sInZlcnNpb24iOjIsImNpcGhlciI6ImFlcy0yNTYtZ2NtIn0.epdfaCQ9fCPqroOlFXSe9YjBZRIxqLMygO0kUVR7J1g' />
+<input type='hidden' name='jetpack_form_fill_duration' value='' />
+
+<div class="wp-block-jetpack-contact-form is-layout-flex wp-container-jetpack-contact-form-is-layout-53c17e14 wp-block-jetpack-contact-form-is-layout-flex" style="padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px">
+<p class="wp-block-paragraph">Or use this <strong>CONTACT FORM </strong>to message us directly. These messages are received during business hours:</p>
+
+
+
+<div style=""  data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g3-name","fieldType":"name","fieldLabel":"Name","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"1","fieldErrorMessage":"","fieldExtra":[],"formHash":"1b604b8ff684ff65fa68b6114708327f66f87bdf"}'  class='grunion-field-name-wrap grunion-field-wrap'  data-wp-init='callbacks.initializeField' data-wp-on--jetpack-form-reset='callbacks.initializeField' >
+<label
+				for='g3-name' class="grunion-field-label name" >Name<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
+<input
+					type='text'
+					name='g3-name'
+					id='g3-name'
+					value=''
+
+					data-wp-bind--aria-invalid='state.fieldAriaInvalid'
+					data-wp-bind--value='state.getFieldValue'
+					aria-describedby='g3-name-text-error-message'
+					data-wp-on--input='actions.onFieldChange'
+					data-wp-on--blur='actions.onFieldBlur'
+					data-wp-class--has-value='state.hasFieldValue'
+
+					class='name  grunion-field' 
+					required='true' aria-required='true'  />
+ 
+			<div id="g3-name-text-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
+				<span class="contact-form__warning-icon" aria-hidden="true">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z" />
+						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z" />
+					</svg>
+				</span>
+				<span data-wp-text="state.errorMessage" id="g3-name-text-error-message"></span>
+			</div> 
+	</div>
+
+
+
+<div style=""  data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g3-email","fieldType":"email","fieldLabel":"Email","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"1","fieldErrorMessage":"","fieldExtra":[],"formHash":"1b604b8ff684ff65fa68b6114708327f66f87bdf"}'  class='grunion-field-email-wrap grunion-field-wrap'  data-wp-init='callbacks.initializeField' data-wp-on--jetpack-form-reset='callbacks.initializeField' >
+<label
+				for='g3-email' class="grunion-field-label email" >Email<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
+<input
+					type='email'
+					name='g3-email'
+					id='g3-email'
+					value=''
+
+					data-wp-bind--aria-invalid='state.fieldAriaInvalid'
+					data-wp-bind--value='state.getFieldValue'
+					aria-describedby='g3-email-email-error-message'
+					data-wp-on--input='actions.onFieldChange'
+					data-wp-on--blur='actions.onFieldBlur'
+					data-wp-class--has-value='state.hasFieldValue'
+
+					class='email  grunion-field' 
+					required='true' aria-required='true'  />
+ 
+			<div id="g3-email-email-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
+				<span class="contact-form__warning-icon" aria-hidden="true">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z" />
+						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z" />
+					</svg>
+				</span>
+				<span data-wp-text="state.errorMessage" id="g3-email-email-error-message"></span>
+			</div> 
+	</div>
+
+
+
+<div style=""  data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g3-message","fieldType":"textarea","fieldLabel":"Message","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"","fieldErrorMessage":"","fieldExtra":[],"formHash":"1b604b8ff684ff65fa68b6114708327f66f87bdf"}'  class='grunion-field-textarea-wrap grunion-field-wrap'  data-wp-init='callbacks.initializeField' data-wp-on--jetpack-form-reset='callbacks.initializeField' >
+<label
+				for='contact-form-comment-g3-message' class="grunion-field-label textarea" >Message</label>
+<textarea
+		                style=''
+		                name='g3-message'
+		                id='contact-form-comment-g3-message'
+		                rows='20'
+						data-wp-text='state.getFieldValue'
+						data-wp-on--input='actions.onFieldChange'
+						data-wp-on--blur='actions.onFieldBlur'
+						data-wp-class--has-value='state.hasFieldValue'
+						aria-describedby='g3-message-textarea-error-message'
+						data-wp-bind--aria-invalid='state.fieldAriaInvalid'
+						class='textarea  grunion-field'  ></textarea>
+ 
+			<div id="g3-message-textarea-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
+				<span class="contact-form__warning-icon" aria-hidden="true">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z" />
+						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z" />
+					</svg>
+				</span>
+				<span data-wp-text="state.errorMessage" id="g3-message-textarea-error-message"></span>
+			</div>
+	</div>
+
+
+<div class="contact-form__error" data-wp-class--show-errors="state.showFormErrors"><span class="contact-form__warning-icon" aria-hidden="true"><i></i></span><span class="contact-form__error-message" tabindex="-1" data-wp-watch="callbacks.focusOnValidationError" data-wp-text="state.getFormErrorMessage"></span><ul aria-label="Form errors">
+				<template data-wp-each="state.getErrorList" data-wp-key="context.item.id">
+					<li><a data-wp-bind--href="context.item.anchor" data-wp-on--click="actions.scrollIntoView" data-wp-text="context.item.label"></a></li>
+				</template>
+				</ul></div><div class="contact-form__error" data-wp-class--show-errors="state.showSubmissionError" data-wp-text="context.submissionError" tabindex="-1" data-wp-watch="callbacks.focusOnSubmissionError"></div> <div class="wp-block-jetpack-button wp-block-button" style=""><button data-wp-bind--disabled="state.isAriaDisabled" class="wp-block-button__link" style="" data-id-attr="placeholder" type="submit" data-wp-class--is-submitting="state.isSubmitting" data-wp-bind--aria-disabled="state.isAriaDisabled">Contact Us<span class="spinner" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path></svg><span class="is-visually-hidden">Submitting form</span></span></button></div></div>
+		<input type='hidden' name='contact-form-id' value='3' />
+		<input type='hidden' name='action' value='grunion-contact-form' />
+		<input type='hidden' name='contact-form-hash' value='1b604b8ff684ff65fa68b6114708327f66f87bdf' />
+<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="207"/><script>
+document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
+</script>
+</p><p style="display: none !important;" class="akismet-blackbox-fields-container"><input type="hidden" name="ak_blackbox_session_id" value="" /><input type="hidden" name="ak_blackbox_elapsed_ms" value="" /><input type="hidden" name="ak_blackbox_status" value="" /></p></form>
+</div>											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+											</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area">
+								<aside id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.ucc.org/" /><img src="https://d3n8a8pro7vhmx.cloudfront.net/unitedchurchofchrist/pages/22561/attachments/original/1536847336/UCC-Full-rainbow-jwfa-brandpage.png?1536847336" alt="UCC logo"></a></div></aside><aside id="block-4" class="widget widget_block">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-fe48e5de wp-block-buttons-is-layout-flex">
+<div class="wp-block-button has-custom-width wp-block-button__width-75 has-custom-font-size is-style-no-shadow has-medium-font-size"><a class="wp-block-button__link has-white-color has-medium-orange-background-color has-text-color has-background wp-element-button" href="https://giv.li/c4dzwq">Donate Now</a></div>
+</div>
+</aside><aside id="facebook-likebox-3" class="widget widget_facebook_likebox"><h3 class="widget-title"><a href="https://www.facebook.com/1stCongregationalChurchStAlbans">Join Us On Facebook</a></h3>		<div id="fb-root"></div>
+		<div class="fb-page" data-href="https://www.facebook.com/1stCongregationalChurchStAlbans" data-width="301"  data-height="800" data-hide-cover="false" data-show-facepile="false" data-tabs="timeline" data-hide-cta="false" data-small-header="true">
+		<div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/1stCongregationalChurchStAlbans"><a href="https://www.facebook.com/1stCongregationalChurchStAlbans">Join Us On Facebook</a></blockquote></div>
+		</div>
+		</aside><aside id="widget_contact_info-3" class="widget widget_contact_info"><h3 class="widget-title">Contact Us</h3><div itemscope itemtype="http://schema.org/LocalBusiness"><div class="confit-address" itemscope itemtype="http://schema.org/PostalAddress" itemprop="address"><a href="https://maps.google.com/maps?z=16&#038;q=27%2Bchurch%2Bstreet%2Bst.%2Balbans%2Bvt%2B05478" target="_blank" rel="noopener noreferrer">27 Church Street <br/>St. Albans VT 05478</a></div><div class="confit-phone"><span itemprop="telephone"><a href="tel:802-524-4555">802-524-4555</a></span></div><div class="confit-email"><a href="mailto:info@firstcongregationalstalbans.org">info@firstcongregationalstalbans.org</a></div><div class="confit-hours" itemprop="openingHours">Office is open daily.</div></div></aside>			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer">
+				<div id="secondary" class="sidebar-container" role="complementary">
+		<div class="widget-area">
+			<aside id="block-2" class="widget widget_block">
+<div class="wp-block-buttons alignwide is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button has-custom-font-size has-custom-width wp-block-button__width-50 is-style-outline has-medium-font-size aligncenter is-style-outline--2"><a class="wp-block-button__link has-white-color has-text-color wp-element-button" href="https://giv.li/c4dzwq">Donate Today</a></div>
+</div>
+</aside><aside id="block-3" class="widget widget_block">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-fe48e5de wp-block-buttons-is-layout-flex"></div>
+</aside>		</div><!-- .widget-area -->
+	</div><!-- #secondary -->
+
+			<div class="site-info">
+												<a href="https://wordpress.com/?ref=footer_custom_powered" rel="nofollow">Website Powered by WordPress.com</a>.
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/pub/twentythirteen/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-importmap" type="importmap">
+{"imports":{"@wordpress/interactivity":"/wp-content/plugins/gutenberg-core/v23.7.1/build/modules/interactivity/index.min.js?m=1786118922i&ver=b0929e0bd08daccaa778"}}
+</script>
+<script id="wp-script-module-data-@wordpress/interactivity" type="application/json">
+{"config":{"jetpack/form":{"error_types":{"invalid_email":"Please enter a valid email address","is_required":"This field is required.","invalid_form_empty":"The form you are trying to submit is empty.","invalid_form":"Please fill out the form correctly.","network_error":"Connection issue while submitting the form. Check that you are connected to the Internet and try again."},"admin_ajax_url":"https://firstcongregationalstalbans.wordpress.com/wp-admin/admin-ajax.php"}}}
+</script>
+<script id="grofiles-cards-js" src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202633d1133547e8a1f2801609f51cef12522abe7f6647d869e9fbc974fe356a37e613"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":""};
+//# sourceURL=wpgroho-js-extra
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile →': 'Edit your profile →',
+							'View profile →': 'View profile →',
+							'Contact': 'Contact',
+							'Send money': 'Send money',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Gravatar not found.': 'Gravatar not found.',
+							'Too Many Requests.': 'Too Many Requests.',
+							'Internal Server Error.': 'Internal Server Error.',
+							'Is this you?': 'Is this you?',
+							'Claim your free profile.': 'Claim your free profile.',
+							'Email': 'Email',
+							'Home Phone': 'Home Phone',
+							'Work Phone': 'Work Phone',
+							'Cell Phone': 'Cell Phone',
+							'Contact Form': 'Contact Form',
+							'Calendar': 'Calendar',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	</div>
+		<div id="actionbar" dir="ltr" style="display: none;"
+			class="actnbr-pub-twentythirteen actnbr-has-follow actnbr-has-actions">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V3H17.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H14.5V13.5H10.5V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path d="M19.5303 15.0303L15.5 19.0605L12.9697 16.5303L14.0303 15.4697L15.5 16.9395L18.4697 13.9697L19.5303 15.0303Z" fill="#008A20"></path></svg>
+			<span>Subscribed</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="https://firstcongregationalstalbans.org">
+				<img loading='lazy' alt='' src='https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=50' srcset='https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=50 1x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=75 1.5x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=100 2x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=150 3x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=200 4x' class='avatar avatar-50' height='50' width='50' />				firstcongregationalstalbans.org			</a>
+		</li>
+										<div class="actnbr-message no-display"></div>
+									<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																				<div>
+										<input type="email" name="email" placeholder="Enter your email address" class="actnbr-email-field" aria-label="Enter your email address" />
+										</div>
+										<input type="hidden" name="action" value="subscribe" />
+										<input type="hidden" name="blog_id" value="115977107" />
+										<input type="hidden" name="source" value="https://firstcongregationalstalbans.org/contact/" />
+										<input type="hidden" name="sub-type" value="actionbar-follow" />
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="975de181a9" />										<div class="actnbr-button-wrap">
+											<button type="submit" value="Sign me up">
+												Sign me up											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											Already have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Ffirstcongregationalstalbans.org%252Fcontact%252F">Log in now.</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+								<li class="actnbr-sitename">
+			<a href="https://firstcongregationalstalbans.org">
+				<img loading='lazy' alt='' src='https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=50' srcset='https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=50 1x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=75 1.5x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=100 2x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=150 3x, https://firstcongregationalstalbans.org/wp-content/uploads/2020/04/cropped-cropped-libcon-photo-of-church-2.jpg?w=200 4x' class='avatar avatar-50' height='50' width='50' />				firstcongregationalstalbans.org			</a>
+		</li>
+								<li class="actnbr-folded-follow">
+										<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V3H17.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H14.5V13.5H10.5V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path d="M19.5303 15.0303L15.5 19.0605L12.9697 16.5303L14.0303 15.4697L15.5 16.9395L18.4697 13.9697L19.5303 15.0303Z" fill="#008A20"></path></svg>
+			<span>Subscribed</span>
+		</a>
+								</li>
+														<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+							<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Ffirstcongregationalstalbans.org%252Fcontact%252F">Log in</a></li>
+																<li class="actnbr-shortlink">
+										<a href="https://wp.me/P7QCWv-3">
+											<span class="actnbr-shortlink__text">Copy shortlink</span>
+											<span class="actnbr-shortlink__icon"><svg class="gridicon gridicons-checkmark" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M9 19.414l-6.707-6.707 1.414-1.414L9 16.586 20.293 5.293l1.414 1.414"/></g></svg></span>
+										</a>
+									</li>
+																<li class="flb-report">
+									<a href="https://wordpress.com/abuse/?report_url=https://firstcongregationalstalbans.org/contact/" target="_blank" rel="noopener noreferrer">
+										Report this content									</a>
+								</li>
+															<li class="actnbr-reader">
+									<a href="https://wordpress.com/reader/blogs/115977107/posts/3">
+										View post in Reader									</a>
+								</li>
+															<li class="actnbr-subs">
+									<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+								</li>
+																<li class="actnbr-fold"><a href="">Collapse this bar</a></li>
+														</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "DOMContentLoaded", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "/wp-content/mu-plugins/actionbar/actionbar.css?v=20250116";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "/wp-content/mu-plugins/actionbar/actionbar.js?v=20250204";
+	document.body.appendChild( script );
+} );
+</script>
+
+	
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script id="jetpack-facebook-embed-js-extra">
+var jpfbembed = {"appid":"249643311490","locale":"en_US"};
+//# sourceURL=jetpack-facebook-embed-js-extra
+</script>
+<script id="jetpack-blocks-assets-base-url-js-before">
+var Jetpack_Block_Assets_Base_Url="https://s0.wp.com/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/";
+//# sourceURL=jetpack-blocks-assets-base-url-js-before
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??-eJx1T9sOgjAM/SGhiobog/FTzBgFNmg3aBfC3zsTnog+Ne259BxYY+HYTqlFAS/gyPQoUzAttiU5Lr2c4MAhI4GX7R/s54TLto/yB9kGVmQFHZCyJKYGdM2HTQe3KCJ/XbrEVl1gOaooFXFKveP8CTUaO+47SGJ45yTQGYtNCGOB1OQaXl70vNSP+lZd79XZfwAOI1qM'></script>
+<script id="wp-dom-ready-js" src="/wp-content/plugins/gutenberg-core/v23.7.1/build/scripts/dom-ready/index.min.js?m=1786118922i&#038;ver=a06281ae5cf5500e9317"></script>
+<script id="wp-hooks-js" src="/wp-content/plugins/gutenberg-core/v23.7.1/build/scripts/hooks/index.min.js?m=1786118922i&#038;ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="/wp-content/plugins/gutenberg-core/v23.7.1/build/scripts/i18n/index.min.js?m=1786118922i&#038;ver=125448662852c5e18937"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-includes/js/dist/vendor/wp-polyfill.min.js?m=1786440387i'></script>
+<script data-wp-strategy="defer" defer id="jetpack-block-mailchimp-js" src="/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/mailchimp/view.js?m=1778085426i&#038;minify=false&#038;ver=16.2-a.0"></script>
+<script data-wp-strategy="defer" defer id="jp-forms-blocks-js" src="/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/blocks/view.js?m=1770926275i&#038;minify=false&#038;ver=22b79568595e547f0402"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/","ext":".png","svgUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?m=1783090810i&ver=7.1-alpha-62686"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script id="jp-forms-view-js-module" src="/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/modules/form/view.js?m=1786074639i&#038;ver=16.2-a.0" type="module"></script>
+<link rel="modulepreload" href="/wp-content/plugins/gutenberg-core/v23.7.1/build/modules/interactivity/index.min.js?m=1786118922i&#038;ver=b0929e0bd08daccaa778" id="@wordpress/interactivity-js-modulepreload" data-wp-fetchpriority="low">
+<script src="//stats.wp.com/w.js?69" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'115977107','blog_tz':'-4','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+		// Prevent sending pageview tracking from WP-Admin pages.
+		_stq.push(['view', {'blog':'115977107','v':'wpcom','tz':'-4','user_id':'0','post':'3','subd':'firstcongregationalstalbans'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGQ/JUs1UEpSWU9oLlImW0RodndBQ21tWDdUUyZSfiUtdVo5QkNvUWtpaVZGVV9Hbm9NVFtBMyZoOVdsOXBvNzdwZzVFUXpjdGgwL1M9MVJNbnF3Ry5xclhIK1ZlSmJQSWYvZVJZY2R5Z3EsfCxmZm0mS005OHxaLmg0cmMsTFIxUEMxdERXUC9FUFFPPT1QTSZuX29nLUtxczF1Jlk4aStDVD94NTAtNmNwRXowbVs1ZzUlXWdUUkk/cnB1WjlzNnYvTFEvaXg/ci1kT356QkQxSjF4dGllbGp1dA=='}]);
+_stq.push([ 'clickTrackerInit', '115977107', '3' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<meta id="bilmur" property="bilmur:data" content="" data-provider="wordpress.com" data-service="simple" data-site-tz="America/New_York" data-custom-props="{&quot;enq_jquery&quot;:&quot;1&quot;,&quot;enq_wp-polyfill&quot;:&quot;1&quot;,&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;pub\/twentythirteen&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}"   >
+		<script defer src="/wp-content/js/bilmur.min.js?i=17&amp;m=202633"></script> 	<script>
+( function() {
+	var sessionFieldName = "ak_blackbox_session_id";
+	var elapsedFieldName = "ak_blackbox_elapsed_ms";
+	var statusFieldName = "ak_blackbox_status";
+	var scriptSrc = "https:\/\/blackbox-api.wp.com\/v1\/dist\/v.js";
+	var apiKey = "2e4504b8f0e9cfabb308475018b734c7";
+	var timeoutMs = 2000;
+
+	// One copy of this script per document. print_collect_script() already prints at most one per
+	// request, so this is defense-in-depth rather than the mechanism -- but not dead code: the flag
+	// is per request and cannot see the document. A page assembled from more than one request (an
+	// AJAX-injected form fragment, fragment caching, a theme that fires wp_footer twice) can still
+	// land a second copy alongside the first, and without this it would register its own listeners
+	// and race the first copy's collects and resets with its own.
+	if ( window.akismetWPCOMBlackboxCollectInstalled ) {
+		return;
+	}
+
+	window.akismetWPCOMBlackboxCollectInstalled = true;
+
+	if ( typeof Promise === 'undefined' ) {
+		return;
+	}
+
+	var collecting = false;
+
+	// init() is a first-cycle-only call; see collectSession().
+	var initialized = false;
+
+	// Bumped by every reset, so work still in flight from the previous cycle cannot stamp the
+	// fields of the next one. Without it the old cycle's timeout resolves two seconds into the new
+	// one and writes 'timeout' over a session that was collected fine.
+	var epoch = 0;
+
+	function now() {
+		if ( window.performance && typeof window.performance.now === 'function' ) {
+			return window.performance.now();
+		}
+
+		return Date.now();
+	}
+
+	function setValue( fieldName, value ) {
+		// Every contact form on the page, not just the one that was touched: the session covers the
+		// whole page until something is submitted, and whichever form ends up submitted has to
+		// carry it. Clearing works the same way -- see resetSession().
+		var fields = document.querySelectorAll( 'input[name="' + fieldName + '"]' );
+		for ( var i = 0; i < fields.length; i++ ) {
+			fields[i].value = value;
+		}
+	}
+
+	// Whether this cycle got a session at all. setValue() writes the same value to every one of
+	// our forms, so any one field answers for all of them.
+	function hasSession() {
+		var field = document.querySelector( 'input[name="' + sessionFieldName + '"]' );
+
+		return !! ( field && field.value );
+	}
+
+	// Walks up rather than reading target.form so an event on a non-control descendant of the form
+	// still resolves to it.
+	function closestForm( target ) {
+		var element = target;
+
+		while ( element && element !== document ) {
+			if ( 'FORM' === element.tagName ) {
+				return element;
+			}
+
+			element = element.parentNode;
+		}
+
+		return null;
+	}
+
+	// Ours only if we injected into it; a page can hold forms we never touched.
+	function isOurForm( form ) {
+		return !! ( form && form.querySelector && form.querySelector( 'input[name="' + sessionFieldName + '"]' ) );
+	}
+
+	function isEligibleTarget( target ) {
+		return isOurForm( closestForm( target ) );
+	}
+
+	function loadBlackbox() {
+		if ( window.Blackbox ) {
+			return Promise.resolve( window.Blackbox );
+		}
+
+		return new Promise( function( resolve, reject ) {
+			var script = document.createElement( 'script' );
+			script.async = true;
+			script.src = scriptSrc;
+			script.onload = function() {
+				resolve( window.Blackbox || null );
+			};
+			script.onerror = function() {
+				reject();
+			};
+
+			( document.head || document.body ).appendChild( script );
+		} );
+	}
+
+	function collectSession() {
+		var resolveSession;
+		var session = new Promise( function( resolve ) {
+			resolveSession = resolve;
+		} );
+
+		return loadBlackbox()
+			.catch( function() {
+				// A blocked or failed v.js is the common real-world miss (extensions, filtered
+				// networks), so it reads as sdk_error rather than falling through to the
+				// exception bucket that means our own glue threw.
+				return null;
+			} )
+			.then( function( blackbox ) {
+				if (
+					! blackbox
+					|| typeof blackbox.configure !== 'function'
+					|| typeof blackbox.init !== 'function'
+				) {
+					return { status: 'sdk_error' };
+				}
+
+				// onSuccess rather than getSessionId(): init() fires collect in the background
+				// and the callback is the SDK's own "a session exists now" edge, so there is no
+				// second promise to poll. Reconfigured every cycle so this cycle's callback
+				// resolves this cycle's promise.
+				blackbox.configure( {
+					apiKey: apiKey,
+					onSuccess: function( result ) {
+						if ( result && typeof result.sessionId === 'string' && result.sessionId ) {
+							resolveSession( { status: 'success', sessionId: result.sessionId } );
+							return;
+						}
+						// A collect that succeeded without handing back an id.
+						resolveSession( { status: 'missing_session' } );
+					}
+				} );
+
+				if ( ! initialized ) {
+					initialized = true;
+
+					return Promise.resolve( blackbox.init() ).then( function() {
+						return session;
+					} );
+				}
+
+				// Only a reset can end a cycle, so reaching here means the previous session has been
+				// submitted and consumed. Tear it down now rather than at submit time: reset() clears
+				// the session and the behavior data behind it and mints a fresh session, so doing it
+				// at the moment of intent is both one collect cheaper and a truer behavior sample.
+				if ( typeof blackbox.reset === 'function' ) {
+					blackbox.reset();
+				}
+
+				// init() is not called again -- `initialized` is read-only on the SDK and a second
+				// init is undefined territory -- and nothing documents onSuccess firing again after
+				// a reset. But reset() is documented to start a fresh session, and getSessionId() to
+				// return the cached id or await the collect in flight, so race both documented edges
+				// rather than betting on either. Whichever resolves first wins, the caller's timeout
+				// still bounds the pair, and the worst case is a 'timeout' that AKISMET-510 measures.
+				if ( typeof blackbox.getSessionId !== 'function' ) {
+					return session;
+				}
+
+				return Promise.race( [
+					session,
+					Promise.resolve( blackbox.getSessionId() )
+						.then( function( sessionId ) {
+							if ( typeof sessionId === 'string' && sessionId ) {
+								return { status: 'success', sessionId: sessionId };
+							}
+
+							return { status: 'missing_session' };
+						} )
+						.catch( function() {
+							// Fall back to the callback rather than losing the cycle to an
+							// exception: a rejected getSessionId() says nothing about onSuccess.
+							return session;
+						} )
+				] );
+			} );
+	}
+
+	function fillFields( startTime, result, cycleEpoch ) {
+		// A submission reset the fields while this cycle's collect was still in flight, so its
+		// result belongs to a session that has already been torn down. Dropping it is the point of
+		// the epoch: stamping now would hand the next submission a consumed session id, or bury a
+		// fresh one under the old cycle's 'timeout'.
+		if ( cycleEpoch !== epoch ) {
+			return;
+		}
+
+		// Collect start to field fill, which is the latency a submit would have had to wait out.
+		var elapsedMs = Math.max( 0, Math.round( now() - startTime ) );
+
+		if ( result && typeof result.sessionId === 'string' && result.sessionId ) {
+			setValue( sessionFieldName, result.sessionId );
+		}
+
+		if ( result && typeof result.status === 'string' && result.status ) {
+			setValue( statusFieldName, result.status );
+		}
+
+		setValue( elapsedFieldName, String( elapsedMs ) );
+	}
+
+	function armIntentListeners() {
+		// Both events: focusin alone misses a paste into an already-focused field, and input alone
+		// waits for the first keystroke when the tab-in is the earlier signal. Re-arming after a
+		// reset is safe without a paired remove -- an identical type/callback/capture triple is
+		// discarded rather than registered twice.
+		document.addEventListener( 'focusin', startCollect, true );
+		document.addEventListener( 'input', startCollect, true );
+	}
+
+	function startCollect( event ) {
+		if ( collecting || ! isEligibleTarget( event.target ) ) {
+			return;
+		}
+
+		collecting = true;
+
+		// Nothing left to listen for until the next submission re-arms these: within a cycle the
+		// session is per page, not per form or per keystroke.
+		document.removeEventListener( 'focusin', startCollect, true );
+		document.removeEventListener( 'input', startCollect, true );
+
+		var startTime = now();
+		var cycleEpoch = epoch;
+		var timeout = new Promise( function( resolve ) {
+			setTimeout( function() {
+				resolve( { status: 'timeout' } );
+			}, timeoutMs );
+		} );
+
+		Promise.race( [ collectSession(), timeout ] )
+			.catch( function() {
+				return { status: 'exception' };
+			} )
+			.then( function( result ) {
+				fillFields( startTime, result, cycleEpoch );
+			} );
+	}
+
+	// Send the behavior gathered since the collect, on the session the submission is carrying.
+	// A second collect() against a live session is a recollect on the server: it merges the new
+	// behavioral telemetry into the existing session, re-scores it, and updates it in place. That
+	// is the only way the keystroke and mouse signal ever reaches Blackbox, since the first
+	// collect fires at the moment of intent and predates all of it.
+	//
+	// Fire and forget, for the same reason nothing else here blocks: the session id was
+	// serialized into the request body before this ran, so there is nothing left to wait for and
+	// nothing left to stamp. It races Akismet's own server-side verify -- one browser hop against
+	// several server ones, so it should land first, and a loss just scores the session the way it
+	// would have been scored anyway.
+	function flushBehavior() {
+		// Nothing to flush onto. A bare collect() here would mint a fresh session that no
+		// submission is carrying and no verify will ever ask about -- including the case where
+		// the user submitted inside the collect window and legitimately sent no session at all.
+		if ( ! hasSession() ) {
+			return;
+		}
+
+		var blackbox = window.Blackbox;
+
+		if ( ! blackbox || typeof blackbox.collect !== 'function' ) {
+			return;
+		}
+
+		try {
+			Promise.resolve( blackbox.collect() ).catch( function() {} );
+		} catch ( e ) {}
+	}
+
+	// Tear the session down after a submission has carried it, so the next one cannot replay it.
+	function resetSession() {
+		// First, so anything still in flight from the cycle just ended stops short in fillFields().
+		epoch++;
+
+		setValue( sessionFieldName, '' );
+		setValue( statusFieldName, '' );
+		setValue( elapsedFieldName, '' );
+
+		// The SDK-side teardown is deliberately not done here -- collectSession() does it at the
+		// start of the next cycle. reset() mints a fresh session as a side effect, and doing that
+		// here would spend a collect on every submission, including the common case of a visitor
+		// who submits one form and leaves. Deferring it also means the next session's behavior data
+		// starts at the moment of intent rather than at the previous submit.
+		collecting = false;
+		armIntentListeners();
+	}
+
+	function onSubmit( event ) {
+		var form = closestForm( event.target );
+
+		if ( ! isOurForm( form ) ) {
+			return;
+		}
+
+		// Deferred a macrotask, for two reasons. Jetpack Forms builds `new FormData( form )`
+		// synchronously inside its own submit handler, so clearing the fields here in the capture
+		// phase would strip them out of the request body we are trying to populate. It is also what
+		// lets the is-submitting check below see the Interactivity render.
+		setTimeout( function() {
+			// Only trust the class when the form actually carries the Interactivity marker that
+			// produces it. Forms whose submit button is rendered server-side (legacy shortcode
+			// forms, class-contact-form.php's !has_submit_button_block branch) never get it,
+			// and skipping the reset there would replay a consumed session on the next form.
+			var tracksSubmitState = !! form.querySelector( '[data-wp-class--is-submitting]' );
+
+			if ( tracksSubmitState && ! form.querySelector( '.is-submitting' ) ) {
+				return;
+			}
+
+			// Order matters: the flush has to read the session off the fields resetSession() is
+			// about to clear. Both sit behind the is-submitting gate above, so a submission that
+			// failed client-side validation neither spends a recollect nor loses its session --
+			// the user is still filling the form, and the eventual real submit flushes instead.
+			flushBehavior();
+			resetSession();
+		}, 0 );
+	}
+
+	armIntentListeners();
+
+	// Capture, because Jetpack Forms calls stopPropagation() on its way to submitting and a
+	// bubble-phase listener would never see an AJAX submission. Passive, because the one thing this
+	// must never do is interfere with the submit -- it makes preventDefault() a no-op, so the
+	// listener cannot cancel a submission even by mistake.
+	document.addEventListener( 'submit', onSubmit, { capture: true, passive: true } );
+} )();
+</script>
+</body>
+</html>
