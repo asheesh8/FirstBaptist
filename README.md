@@ -4,6 +4,8 @@ A joyful, welcoming digital home for First Congregational Church of St. Albans,
 Vermont. The experience uses the **Village Hearth** brand and its **Welcome
 Chime** mark, with authentic, people-free photography from the church archive.
 
+**Live:** https://first-baptist.vercel.app — the repository name is historical; the site is for First Congregational Church of St. Albans.
+
 ## What is included
 
 - Sunday worship and first-visit information
